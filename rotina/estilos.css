@@ -1,0 +1,42 @@
+html{
+    background-color: rgba(166, 166, 6, 0.871);
+}
+@font-face {
+    font-family:'Elden';
+    src:url("Mantinia Regular.otf") format('opentype'), url('Mantinia Regular.ttf')
+    format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+
+
+
+h1{
+   
+    background-color: rgb(155, 89, 22);
+   
+   
+
+    border: 10px solid rgb(0, 0, 0);
+    border-style: double;
+    border-radius:  10%;
+
+    text-align: center;
+    font-family:'Elden', Times, serif;
+    font-size: 45px;
+    font-weight: normal;
+    background-size: cover;
+    width: 1000px;
+    
+    
+  
+}
+p{
+
+
+    font-family:'Elden', Times, serif;
+    font-size: 35px;
+    font-weight: normal;
+}

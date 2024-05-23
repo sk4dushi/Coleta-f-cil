@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações com HUD</title>
+    <link rel="stylesheet" href=".css">
+    <style>
+@font-face {
+    font-family:'Elden';
+    src:url("Mantinia Regular.otf") format('opentype'), url('Mantinia Regular.ttf')
+    format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+           body {
+            
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0cb503, #573908);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.hud {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.hud-button {
+    padding: 10px 40px;
+    background-color: #06ffda69;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+
+}
+
+.hud-button:hover {
+    background-color: #603c02;
+}
+.info-card {
+    background-color: rgb(6, 23, 92);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+
+.name {
+    color: #ffffffd0;
+    font-size: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+    
+   
+}
+
+.category, .created-by, .description {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+strong {
+    color: #000;
+}
+
+.grass-container {
+    display: flex;
+    gap: 10px;
+}
+
+.grass-blade {
+    width: 10px;
+    height: 50px;
+    background-color: green;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: sway 3s infinite ease-in-out;
+}
+
+.grass-blade:nth-child(odd) {
+    height: 60px;
+    animation-duration: 2.5s;
+}
+
+@keyframes sway {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+    </style>
+</head>
+<body>
+   
+    <div class="hud">
+        <button class="hud-button">Atendimento</button>
+        <button class="hud-button">Geral</button>
+        <button class="hud-button">Notícias</button>
+        <button class="hud-button">Guia</button>
+        <button class="hud-button">Unidade mais proxima</button>
+    </div>
+    <div class="info-card">
+        <h1 class="name">Coleta Fácil</h1>
+        <p class="category"><strong>Categoria:</strong> Educação</p>
+        <p class="created-by"><strong>Criado por:</strong> The Sky</p>
+        <p class="description"><strong>Informações:</strong>Ajudar nosso meio ambiente</p>
+    </div>
+</body>
+</html>
